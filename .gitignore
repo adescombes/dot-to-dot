@@ -10,3 +10,4 @@ venv/*
 *.swp
 
 out/*
+.DS_Store

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Processing</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <h1>Upload an Image</h1>
+
+  <!-- Conteneur principal -->
+<div class="container">
+  <!-- Colonne gauche pour afficher l'image -->
+  <div class="left-column">
+
+  <label for="fileInput" class="custom-button">Upload Image</label>
+    <input type="file" id="fileInput" name="uploaded_file" class="file_input_hidden" />    
+
+
+    <div id="imagePreview">
+      <p>No image selected</p>
+      <img id="previewImage" src="" alt="Preview" style="max-width: 100%; display: none;">
+      <button id="processButton" class="custom-button" style="display: none; margin-top: 20px;">Process Image</button>
+
+    </div>
+
+  </div>
+
+  <!-- Colonne droite pour le formulaire -->
+  <div class="right-column">
+    
+  </div>
+</div>
+
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
