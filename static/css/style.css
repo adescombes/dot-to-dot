@@ -15,7 +15,7 @@ h1 {
     font-family: 'DotsAllForNow';
     text-align: center;
     margin: 20px;
-    font-size: 60px;
+    font-size: 40px;
   }
   
   form {
@@ -32,7 +32,7 @@ h1 {
   
   .container {
     display: flex;
-    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    height: 100vh; 
   }
   
   .left-column {
@@ -47,15 +47,15 @@ h1 {
   }
   
   #imagePreview {
-    height: 90%; /* Laisser un peu d'espace pour le texte */
+    height: 90%; 
     overflow: auto;
     padding: 10px;
   }
   
   #previewImage {
     max-width: 100%;
-    max-height: 100%; /* L'image ne dépasse pas la zone */
-    display: none; /* Masqué tant qu'aucune image n'est sélectionnée */
+    max-height: 100%; 
+    display: none; 
   }
   
   .file_input_div {
@@ -68,8 +68,7 @@ h1 {
     margin: 0 auto;
   }
   
-    /* Style du bouton personnalisé */
-.custom-button {
+.custom-button, .download-button {
     font-family: 'DotsAllForNow';
     display: inline-block;
     background-color: #fc65c0;
@@ -80,3 +79,20 @@ h1 {
     border-radius: 4px;
     cursor: pointer;
 }
+
+.custom-button:hover, .download-button:hover {
+    background-color: #0056b3;
+  }
+
+.download-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  select {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+

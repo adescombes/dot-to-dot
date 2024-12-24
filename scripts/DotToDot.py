@@ -85,13 +85,21 @@ def makeDotToDot(fullFilePath, intermediateSteps = False):
 
     return cleanPoints
 
-def makeMaxSizeDot(fullFilePath, maxDots):
+def makeMaxSizeDot_(input_path, output_path):
+    image = Image.open(input_path)
+    # Exemple de traitement : redimensionner l'image
+    image = image.resize((800, 800))  # Ajustez les dimensions si nécessaire
+    image.save(output_path)
+
+def makeMaxSizeDot(fullFilePath, maxDots, output_folder):
     inputImageDimension = 1200
     dotsInImage = maxDots + 1
 
     fileName = os.path.split(fullFilePath)[-1]
-    outPathJpg = './static/processed/' + fileName
-    outPathPdf = './static/processed/' + os.path.splitext(fileName)[0] + '.pdf'
+    outPathJpg = os.path.join(output_folder, fileName)
+    outPathPdf = os.path.join(output_folder, os.path.splitext(fileName)[0] + '.pdf')
+    # outPathJpg = './static/processed/' + fileName
+    # outPathPdf = './static/processed/' + os.path.splitext(fileName)[0] + '.pdf'
 
     # Repeat complete makeDotToDot process, decreasing image resolution, until
     # few enough dots
