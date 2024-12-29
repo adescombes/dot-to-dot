@@ -19,7 +19,7 @@ h1 {
   }
   
   form {
-    margin: 20px auto;
+    margin: 0px auto;
   }
   
   
@@ -81,7 +81,7 @@ h1 {
 }
 
 .custom-button:hover, .download-button:hover {
-    background-color: #0056b3;
+    background-color: #fda2d9;
   }
 
 .download-container {
